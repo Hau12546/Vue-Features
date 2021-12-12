@@ -2,44 +2,56 @@
   <header>
     Vue Course Goals
   </header>
-  <section id="user-goals">
-   <h1>{{outputGoals()}}</h1>
+  <!-- <section id="user-goals">
+   <h1>{{outputGoals()}}</h1> -->
      <!-- <div id="separate-line"></div>
     <p class="catch-phrase">{{courseGoalA}}</p> 
     <p class="catch-phrase">{{outputGoals()}}</p> 
     <p class="catch-phrase" v-html="outputGoals()"></p>
     <p class="catch-phrase">Learn More <a v-bind:href="VueLink">About Vue</a></p> -->
-    <button v-on:click="IncreaseMethod()" type="button" class="btn btn-success">Increase</button>
-    <button v-on:click="DecreaseMethod()" type="button" class="btn btn-danger">Decrease</button>
+    <!-- <button v-on:click="IncreaseMethod()" type="button" class="btn btn-success">Increase</button>
+    <button v-on:click="DecreaseMethod()" type="button" class="btn btn-danger">Decrease</button> -->
     <!-- <p class="catch-phrase" v-once>Initial Value: {{result/result}}</p> -->
-    <p class="catch-phrase">Value: {{counter}}</p>
+    <!-- <p class="catch-phrase">Value: {{counter}}</p> -->
     <!-- <input class="form-input" type="text" v-model="name" >
     <div class="item-container d-flex">
       <button v-on:click="Submit()" type="button" class="btn btn-primary">Submit</button>
       <button v-on:click="Reset()" type="button" class="btn btn-secondary">Reset</button>
     </div>
     <p v-if="name.length>0" class="catch-phrase">{{FullName}}</p> -->
-    <div class="item-container d-flex">
+    <!-- <div class="item-container d-flex">
     <div class="item-container" v-bind:class="FirstChoice" v-on:click="HighlightChoice('A')">A</div>
     <div class="item-container" v-bind:class="{Box: Secondchosen}" v-on:click="HighlightChoice('B')">B</div>
     <div class="item-container" v-bind:class="[{Box: Thirdchosen}]" v-on:click="HighlightChoice('C')">C</div>
     </div>
-  </section>
+  </section> -->
   <!-- <Assignment1/> -->
   <!-- <Assignment2/> -->
   <!-- <Assignment3/> -->
+  <!-- <assignment4/> -->
+  <!-- <ConditionalRendering/> -->
+  <!-- <MonsterSlayer/> -->
+  <VueDeepWorks/>
 </template>
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import Assignment1 from './components/Assignment1.vue'
 // import Assignment2 from './components/Assignment2.vue'
 // import Assignment3 from './components/Assignment3.vue'
+// import Assignment4 from './components/Assignment4'
+// import ConditionalRendering from './components//ConditionalRendering.vue'
+// import MonsterSlayer from './components/MonsterSlayer/MonsterSlayer'
+import  VueDeepWorks  from './components/VueBehindTheScene/VueDeepWorks'
 export default {
   name: 'App',
   components:{
-    // Assignment1
-    // Assignment2
-    // Assignment3
+    // Assignment1,
+    // Assignment2,
+    // Assignment3,
+    // Assignment4,
+    // ConditionalRendering,
+    // MonsterSlayer,
+    VueDeepWorks
   },
   data(){
     return {
@@ -208,9 +220,9 @@ div[class~=Box]{
   background-color: #473cda;
 }
 
-.div[class~=d-flex]{
+div[class~=d-flex]{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 1em;
 }
@@ -244,5 +256,28 @@ button[class~=btn-secondary]{
 
 .form-input:hover,.form-input:focus{
   border: 3px solid #3b30d4!important;
+}
+
+.nav-list{
+    display: block;
+    position: relative;
+    max-height: 200px;
+    padding: .5em;
+    margin-inline: 0%;
+    max-width: 100%;
+    list-style-type: disc;
+    background-color: #8ea094;
+    color: #FFFF;
+    overflow: auto;
+}
+
+.list-item{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgb(42, 45, 202)!important;
 }
 </style>
