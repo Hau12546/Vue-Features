@@ -31,7 +31,10 @@
   <!-- <assignment4/> -->
   <!-- <ConditionalRendering/> -->
   <!-- <MonsterSlayer/> -->
-  <VueDeepWorks/>
+  <!-- <VueDeepWorks/> -->
+  <!-- <IntroducingComponent/> -->
+  <!-- <DeepDiveComponents/> -->
+  <LearningApp/>
 </template>
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
@@ -41,7 +44,11 @@
 // import Assignment4 from './components/Assignment4'
 // import ConditionalRendering from './components//ConditionalRendering.vue'
 // import MonsterSlayer from './components/MonsterSlayer/MonsterSlayer'
-import  VueDeepWorks  from './components/VueBehindTheScene/VueDeepWorks'
+// import  VueDeepWorks  from './components/VueBehindTheScene/VueDeepWorks'
+// import IntroducingComponent from "./components/IntroducingComponent/IntroducingComponent.vue";
+// import ActiveUser from "./components/Assignment6/ActiveUser"
+// import DeepDiveComponents from "./components/DeepDiveComponents/DeepDiveComponents";
+import LearningApp from "./components/Learning Resource App/LearningResourceApp/LearningApp"
 export default {
   name: 'App',
   components:{
@@ -51,7 +58,10 @@ export default {
     // Assignment4,
     // ConditionalRendering,
     // MonsterSlayer,
-    VueDeepWorks
+    // VueDeepWorks,
+    // IntroducingComponent,
+    // DeepDiveComponents,
+    LearningApp,
   },
   data(){
     return {
@@ -146,22 +156,23 @@ export default {
 }
 </script>
 
-<style>
+<style  scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin: 0;
   padding: 0;
 }
 
+
 header{
   display: block;
   padding: 1em;
   background-color: #159b42;
-  color:  #FFFF;
+  color:  rgb(90, 85, 85);
   text-align: center;
 }
 #user-goals{
