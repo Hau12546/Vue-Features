@@ -34,7 +34,8 @@
   <!-- <VueDeepWorks/> -->
   <!-- <IntroducingComponent/> -->
   <!-- <DeepDiveComponents/> -->
-  <LearningApp/>
+  <!-- <LearningApp/> -->
+  <Route/>
 </template>
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
@@ -48,7 +49,8 @@
 // import IntroducingComponent from "./components/IntroducingComponent/IntroducingComponent.vue";
 // import ActiveUser from "./components/Assignment6/ActiveUser"
 // import DeepDiveComponents from "./components/DeepDiveComponents/DeepDiveComponents";
-import LearningApp from "./components/Learning Resource App/LearningResourceApp/LearningApp"
+// import LearningApp from "./components/Learning Resource App/LearningResourceApp/LearningApp"
+import Route from "./components/Routing/Route/Route";
 export default {
   name: 'App',
   components:{
@@ -61,7 +63,8 @@ export default {
     // VueDeepWorks,
     // IntroducingComponent,
     // DeepDiveComponents,
-    LearningApp,
+    // LearningApp,
+    Route,
   },
   data(){
     return {
