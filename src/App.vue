@@ -35,7 +35,10 @@
   <!-- <IntroducingComponent/> -->
   <!-- <DeepDiveComponents/> -->
   <!-- <LearningApp/> -->
-  <TheForm/>
+  <!-- <TheForm/> -->
+  <!-- <SurveyApp/> -->
+  <!-- <routing/> -->
+  <VueXTemplate/>
 </template>
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
@@ -50,7 +53,10 @@
 // import ActiveUser from "./components/Assignment6/ActiveUser"
 // import DeepDiveComponents from "./components/DeepDiveComponents/DeepDiveComponents";
 // import LearningApp from "./components/Learning Resource App/LearningResourceApp/LearningApp"
-import TheForm from './components/Forms/TheForm.vue'
+// import TheForm from './components/Forms/TheForm.vue'\
+// import SurveyApp from "./components/HttpRequests/survey/SurveyApp.vue"
+// import Routing from "./components/Routing/Routing.vue"
+import VueXTemplate from "./components/VueX/VueXTemplate/VueXTemplate.vue"
 export default {
   name: 'App',
   components:{
@@ -64,7 +70,10 @@ export default {
     // IntroducingComponent,
     // DeepDiveComponents,
     // LearningApp,
-    TheForm
+    // TheForm,
+    // SurveyApp,
+    // 'routing':Routing,
+    VueXTemplate,
   },
   data(){
     return {
