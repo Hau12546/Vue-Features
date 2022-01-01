@@ -38,7 +38,9 @@
   <!-- <TheForm/> -->
   <!-- <SurveyApp/> -->
   <!-- <routing/> -->
-  <VueXTemplate/>
+  <!-- <VueXTemplate/> -->
+  <!-- <vuex-main/>, -->
+  <coach-page/>
 </template>
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
@@ -56,7 +58,9 @@
 // import TheForm from './components/Forms/TheForm.vue'\
 // import SurveyApp from "./components/HttpRequests/survey/SurveyApp.vue"
 // import Routing from "./components/Routing/Routing.vue"
-import VueXTemplate from "./components/VueX/VueXTemplate/VueXTemplate.vue"
+// import VueXTemplate from "./components/VueX/VueXTemplate/VueXTemplate.vue"
+// import VuexMain from './components/VuexExercises/VuexMain/VuexMain.vue'
+import CoachMainPage from './components/CoachFinder/Pages/CoachMainPage/CoachMainPage.vue'
 export default {
   name: 'App',
   components:{
@@ -73,7 +77,9 @@ export default {
     // TheForm,
     // SurveyApp,
     // 'routing':Routing,
-    VueXTemplate,
+    // VueXTemplate,
+    // 'vuex-main':VuexMain
+    'coach-page':CoachMainPage
   },
   data(){
     return {
